@@ -1,1 +1,211 @@
-hi
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Crossberry Products</title>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1a73e8;
+            --text-dark: #202124;
+            --text-light: #5f6368;
+            --border-color: #dadce0;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: var(--text-dark);
+            background-color: #fff;
+        }
+
+        /* Header */
+        header {
+            padding: 15px 30px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            background: white;
+            z-index: 100;
+        }
+
+        .logo {
+            font-family: 'Google Sans', sans-serif;
+            font-size: 22px;
+            color: var(--text-light);
+            font-weight: 500;
+        }
+
+        .logo span { color: var(--primary-color); }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-family: 'Google Sans', sans-serif;
+            font-size: 44px;
+            margin-bottom: 16px;
+            font-weight: 400;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* Product Grid */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .product-card {
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 24px;
+            transition: box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .icon-box {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icon-box .material-icons-outlined {
+            font-size: 40px;
+            color: var(--primary-color);
+        }
+
+        .product-card h3 {
+            font-family: 'Google Sans', sans-serif;
+            margin: 0 0 10px 0;
+            font-size: 20px;
+        }
+
+        .product-card p {
+            color: var(--text-light);
+            font-size: 14px;
+            line-height: 1.5;
+            flex-grow: 1;
+        }
+
+        .learn-more {
+            margin-top: 20px;
+            color: var(--primary-color);
+            font-weight: 500;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            border-top: 1px solid var(--border-color);
+            margin-top: 60px;
+            color: var(--text-light);
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Cross<span>berry</span></div>
+</header>
+
+<section class="hero">
+    <h1>Explore our products</h1>
+    <p>Discover the Crossberry ecosystem, from lightning-fast search to seamless entertainment and developer tools.</p>
+</section>
+
+<div class="container">
+    <div class="product-grid">
+        
+        <a href="https://crossberry.vercel.app" class="product-card">
+            <div class="icon-box"><span class="material-icons-outlined">home</span></div>
+            <h3>Crossberry Home</h3>
+            <p>The central hub for all Crossberry services and ecosystem updates.</p>
+            <div class="learn-more">Visit Page →</div>
+        </a>
+
+        <a href="https://Crossberry-doc.vercel.app" class="product-card">
+            <div class="icon-box"><span class="material-icons-outlined">description</span></div>
+            <h3>Documentation</h3>
+            <p>Comprehensive guides and API references for integrating with Crossberry.</p>
+            <div class="learn-more">Read Docs →</div>
+        </a>
+
+        <a href="https://strawbee.vercel.app/" class="product-card">
+            <div class="icon-box"><span class="material-icons-outlined">search</span></div>
+            <h3>Strawbee</h3>
+            <p>A powerful, privacy-focused search engine built for the modern web.</p>
+            <div class="learn-more">Start Searching →</div>
+        </a>
+
+        <a href="https://cbjs.vercel.app/" class="product-card">
+            <div class="icon-box"><span class="material-icons-outlined">code</span></div>
+            <h3>CBJS</h3>
+            <p>A fast content delivery network for JavaScript libraries and web assets.</p>
+            <div class="learn-more">Browse Libraries →</div>
+        </a>
+
+        <a href="https://movievit.vercel.app/" class="product-card">
+            <div class="icon-box"><span class="material-icons-outlined">play_circle_outline</span></div>
+            <h3>MovieVit</h3>
+            <p>High-quality movie streaming service with a minimalist interface.</p>
+            <div class="learn-more">Stream Now →</div>
+        </a>
+
+        <a href="https://dubbingmovie.vercel.app/" class="product-card">
+            <div class="icon-box"><span class="material-icons-outlined">translate</span></div>
+            <h3>Dubbing Movie</h3>
+            <p>Watch your favorite movies with professional dubbed audio tracks.</p>
+            <div class="learn-more">Watch Now →</div>
+        </a>
+
+        <a href="https://crossberry-movie.vercel.app/" class="product-card">
+            <div class="icon-box"><span class="material-icons-outlined">theaters</span></div>
+            <h3>Crossberry Movie</h3>
+            <p>The flagship cinematic experience for the Crossberry community.</p>
+            <div class="learn-more">Explore Movies →</div>
+        </a>
+
+    </div>
+</div>
+
+<footer>
+    &copy; 2024 Crossberry Ecosystem. Built with Material Lite UI.
+</footer>
+
+</body>
+</html>
